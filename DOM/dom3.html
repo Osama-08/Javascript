@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="lan">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlan(lannam) {
+         const   li=document.createElement('li');
+       li.innerHTML=`${lannam}`
+      document.querySelector('.lan').appendChild(li);
+    
+
+    }
+addlan('Python');
+addlan('C++');
+addlan('Ruby');
+
+function opptimize(params) {
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(params));
+     document.querySelector('.lan').appendChild(li);
+
+
+
+}
+opptimize("SQL");
+
+//Edit value
+
+ const lan2=document.querySelector('li:nth-child(2)');
+//   lan2.innerHTML='h';
+ const newli=document.createElement('li');
+newli.textContent='ka';
+lan2.replaceWith(newli);
+
+//remove
+ const last=document.querySelector('li:last-child');
+ last.remove();
+
+
+
+</script>
+</html>
