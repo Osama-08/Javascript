@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+       const sayname=()=>{
+        console.log("Muhammad Osama Abbasi");
+       }
+       const changetxt=()=>{
+        document.querySelector('h1').innerHTML='Best JS series';
+       }
+    const change_me=setTimeout(changetxt,5000);
+    setTimeout(sayname,2000);
+    
+    document.querySelector('#stop').addEventListener('click',(e)=>{
+        clearTimeout(change_me);
+        console.log('stoped');
+    })
+</script>
+</html>

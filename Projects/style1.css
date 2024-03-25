@@ -1,0 +1,51 @@
+.container{
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: bottom 20px; ;    
+}
+
+.home{
+    border-radius: 2rem;
+    
+}
+.about{
+    border-radius: 2rem;
+}
+.color{
+    background-color: aliceblue;
+    border-radius: 2rem;
+}
+.container2{
+    display: flex;
+    background-color: azure;
+    border-radius: 3rem;
+    margin-top:20px ;
+    padding: 1rem;
+}
+
+.container2:hover{
+    background-color: rgba(118, 180, 180, 0.658);
+}
+.tag{
+    white-space-collapse: 2rem;
+    display: flex;
+    margin-left: 2rem;
+    letter-spacing: 2px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.black{
+    background-color: #212121;
+}
+.home:hover{
+    background-color: #7e7979;
+}
+.about:hover{
+    background-color: #7e7979;
+}
